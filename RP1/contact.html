@@ -1,0 +1,65 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="Assets/css/style.css"> 
+    </head>
+   
+
+    <body>
+            <header>
+        <h1>Michael Morales</h1>
+        <nav>
+            <ul>
+                <li><a target="_self" href="index.html">About</a></li>
+                <li><a target="_self" href="portfolio.html">Portfolio</a></li>
+                <li><a target="_self" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+            <div id="EntireContent">
+                <div id="MainContent">
+                    <h2>Contact</h2>
+                    <hr>
+                    <br>
+                    <form>
+                        <label>Name</label><br>
+                        <input class="inputForm" type="text" placeholder="John Smith" />
+                        <br><br>
+                        <label>Email</label><br>
+                        <input class="inputForm" type="text" placeholder="example@gmail.com" />
+                        <br><br>
+                        <label>Message</label><br>
+                        <textarea  class="textarea"   rows="18"></textarea><br><br>
+                        <button id="frmSubmit" onclick='submitForm();'>Submit</button>
+                    </form>
+                    <script>
+                        function submitForm() {
+                             var fields = document.getElementsByClassName("inputForm");
+                             var fields2 = document.getElementById("textArea");
+                            
+                             alert("Thank you for your feedback!\nAn email was sent to your email!");
+                             fields.value="";
+                             field.value="";
+                        }
+                    </script>
+                </div>
+                <div id="sidebar">
+                    <h3>Connect With Me</h3>
+                    <hr>
+                    <a target="_blank" href="https://www.linkedin.com/in/michael-moralesguillen">
+                        <img src="Assets/images/if_linkedin_square_color_107091.svg" alt="LinkedIN"/>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/mas.senz1">
+                        <img src="Assets/images/if_facebook_square_107117.svg" alt="FaceBook"/>
+                    </a>
+                    <a target="_blank" href="https://github.com/MASK-13/MASK-13.github.io">
+                        <img src="Assets/images/if_github_square_black_107109.svg" alt="git-hub"/>
+                    </a>
+                </div>
+            </div>
+        </body>
+        <section id="footer">
+        <footer>Copyright Michael Morales.</footer>
+	</section>
+    </html>
